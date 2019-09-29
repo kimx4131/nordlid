@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #304a5f;
+}
+
+h1{
+    font-size: 2rem;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    line-height: 45px;
+}
+@media (max-width: 576px){
+    h1{
+        font-size: 1.3rem;
+        line-height: 28px;
+        margin-bottom: 25px;
+        margin-top:20px;
+    }
+    .my_flex_column_reverse{
+        -ms-flex-direction: column-reverse!important;
+        flex-direction: column-reverse!important;
+    }
+}
+
+p{
+    line-height: 23px;
+}
+
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 1100px;
+    }
+}
+
+
+/* CAROSEL */
+.my_carousel_caption{
+    position: absolute;
+    top: 28%;
+    z-index: 10;
+    color: #fff;
+    font-size: 3rem;
+    width: 60%;
+    margin-left: 20.5%;
+    
+}
+
+.my_carousel_caption p {
+    line-height: 65px;
+}
+
+.carousel-control-next-icon{
+    background-image: url('icons/right-arrow.png');
+}
+
+.carousel-control-prev-icon{
+    background-image: url('icons/left-arrow.png');
+}
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    height: 45px;
+}
+
+.carousel-control-next, .carousel-control-prev{
+    width: 28%;
+}
+
+@media(max-width: 768px){
+    .carousel-inner{
+        height: 300px;
+    }
+    .carousel-item img{
+        height: 300px;
+        width: auto;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        width: 15%;
+    }
+    .my_carousel_caption{
+        font-size: 2.2rem;
+        top: 22%;
+        width: 70%;
+        margin-left: 14%;
+    }
+    .my_carousel_caption p {
+        line-height: 50px;
+    }
+}
+
+@media (max-width: 576px){
+    .carousel-inner{
+        height: 220px;
+    }
+
+    .carousel-control-prev-icon, .carousel-control-next-icon{
+        height: 22px;
+        width: 13px;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        width: 10%;
+    }
+
+    .carousel-item img{
+        height: 220px;
+        width: auto;
+    }
+
+    .my_carousel_caption{
+        font-size: 1.4rem;
+        top: 15%;
+        width: 70%;
+        margin-left: 10%;
+    }
+
+    .my_carousel_caption p {
+        line-height: 30px;
+    }
+}
+/* CAROSEL SLUT */
+
+/* FORM */
+.my_input{
+    width: 100%;
+    border: none;
+    border-bottom: solid 1px #304a5f;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+input:focus{
+    outline: none;
+}
+
+.my_input[type="text"], .my_input[type="email"], .my_input[type="number"]{
+    font-size: 0.8rem;
+    color: #304a5f;
+}
+
+.container_checkbox {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 0.7rem;
+    margin-top: 30px;
+}
+
+.container_checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 30px;
+    width: 30px;
+    border: 1px solid #304a5f;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container_checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container_checkbox input:checked ~ .checkmark {
+    background-color: white;
+}
+
+.container_checkbox .checkmark:after {
+    left: 9px;
+    top: 0px;
+    width: 10px;
+    height: 25px;
+    border: solid #E6017E;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.btn_sent{
+    width: 50%;
+    text-align: center;
+    background: #E6017E;
+    color: white;
+    font-weight: 700;
+    border: none;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+
+.errortlf, .erroremail, .errorname{
+    color: #E6017E;
+    font-size: 0.8rem;
+}
+
+.my_hide{
+    display: none;
+}
+
+.my_show{
+    display: block;
+}
+
+.error_my_input{
+    border-bottom: solid 1px #E6017E;
+}
+.okay_my_input{
+    border-bottom: solid 1px #304a5f;
+}
+
+.error_checkmark {
+    background-color: #E6017E;
+}
+.okay_checkmark {
+    background-color: white;
+}
+
+@media (max-width: 768px){
+    .btn_sent{
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .container_checkbox {
+        font-size: 0.6rem;
+    }
+}
+/* FORM SLUT */
+
+/* USP OMRÅDE */
+.bg-blue{
+    background: #2a697b;
+    color: white;
+    margin-top: 50px;
+    padding: 60px 0;
+}
+
+.usp{
+    margin-bottom: 20px;
+    width: 50%;
+    margin-right: auto;
+    margin-left: 25%;
+}
+
+.usp_text{
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 30px;
+}
+
+.usp-box{
+    padding: 0 40px;
+}
+
+.usp-container{
+    padding: 0 40px;
+}
+
+@media (max-width: 768px){
+    .usp_text{
+        font-size: 1.3rem;
+    }
+    .usp-box{
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 576px){
+    .bg-blue{
+        margin-top:10px;
+    }
+    .usp{
+        margin-bottom: 10px;
+        width: 30%;
+        margin-left: 35%;
+    }
+    .usp_text{
+        text-align: center;
+        font-size: 1.4rem;
+        margin-bottom: 40px;
+    }
+    .usp-container{
+        padding: 0 50px;
+    }
+}
+/* USP OMRÅDE SLUT */
+
+/* FOOTER */
+.bg-grey{
+    background: #313131;
+    color: white;
+    font-size: 1rem;
+    padding: 50px 0 150px;
+}
+
+.footer-title{
+    font-weight: bold;
+}
+
+.socialemedier{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialemedier img{
+    margin: 155px 7px 7px;
+    width: 53px;
+    height: auto;
+}
+
+.footer_icons{
+    width: 29px;
+    height: 39px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.contact_spcaing{
+    margin-bottom: 15px;
+}
+
+.contact_spcaing p{
+    vertical-align: middle;
+    padding: 0;
+    margin: 0 0 0 10px;
+    display: inline-block;
+}
+
+@media (max-width: 576px){
+    .contact_spcaing:last-of-type{
+        margin-bottom: 50px;
+    }
+
+    .bg-grey{
+        padding-top: 25px;
+        padding-bottom:30px;
+        font-size: 0.8rem;
+    }
+    .socialemedier{
+        justify-content: center;
+    }
+    .socialemedier img{
+        margin: 7px;
+    }
+}
+
+/* FOOTER */
